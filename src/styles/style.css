@@ -140,7 +140,8 @@ main {
         10px 10px 10px rgba(0, 0, 0, 0.575),
         0 0 10PX 0 rgba(0, 0, 0, 0.131); */
     position: relative;
-    /* transform: translateY(-40px); */
+    transform: translateY(-20px);
+    padding-bottom: 3rem;
 }
 
 .list {
