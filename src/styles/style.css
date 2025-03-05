@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: "Book Script";
+    src: url(../files/book_font.otf);
+}
+
+:root {
+    --bg_color: #f5f0ea;
+    --btn_color: #edd7c8;
+    --font_color: white;
+}
+
+body {
+    height: 100svh;
+    font-family: Montserrat;
+    background-color: var(--bg_color);
+}
+
+/* header{
+    width: 100svh;
+    display: flex;
+    flex-direction: column;
+} */
+
+
+.banner {
+    width: 100%;
+    height: 250px;
+    max-height: 250px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    background: radial-gradient(circle, rgba(244, 209, 216, 1) 0%, rgba(217, 166, 177, 1) 35%, rgba(191, 123, 137, 1) 100%);
+    /* box-shadow: inset 0 0 50px 0px white; */
+
+}
+
+.div_img {
+    display: flex;
+    flex-direction: column;
+    max-height: 250px;
+    width: 80%;
+    max-width: 350px;
+    min-height: 200px;
+    justify-content: end;
+}
+
+header .banner_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 1000px;
+    object-position: center;
+    opacity: 0.5;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg_color);
+    height: 100%;
+}
+
+.profile_foto {
+    width: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    position: relative;
+    margin: auto;
+    transform: translateY(-4rem);
+    box-shadow:
+        inset 0 0 10px rgb(255, 255, 255),
+        0 0 0 0.5rem white,
+        0 5px 7px 0.5rem rgba(0, 0, 0, 0.39),
+        0 0 0 1rem var(--bg_color);
+    background: radial-gradient(circle, rgba(244, 209, 216, 1) 0%, rgba(235, 194, 202, 1) 35%, rgba(229, 178, 188, 1) 100%);
+
+}
+
+
+
+
+.profile_foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+
+    /* transform: translateY(5px); */
+}
+
+.profile_name {
+    transform: translateY(-4rem);
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    /* font-family: "Book Script"; */
+    text-transform: uppercase;
+}
+
+.profile_desc {
+    transform: translateY(-4rem);
+    font-family: "Hanken Grotesk";
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.division {
+    width: 75px;
+    height: 2px;
+    border-radius: 100%;
+    background-color: black;
+    transform: translateY(-3rem);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selection {
+    /* height: auto;
+    width: auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow:
+        10px 10px 10px rgba(0, 0, 0, 0.575),
+        0 0 10PX 0 rgba(0, 0, 0, 0.131); */
+    position: relative;
+    /* transform: translateY(-40px); */
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.list a {
+    width: 47vw;
+    min-width: 250px;
+    max-width: 400px;
+    height: 70px;
+    border-radius: 30px;
+    border: 2px solid var(--btn_color);
+    font-size: 1.2em;
+    font-weight: 500;
+    color: var(--font_color);
+    background-color: var(--btn_color);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 15px;
+    transition: 0.2s all ease;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 10px 5px 0px rgba(0, 0, 0, 0.109);
+}
+
+.list a:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 5px 2px rgba(85, 85, 85, 0.459);
+}
+
+@media screen and (max-width: 640px) {
+    .list a {
+        font-size: 1em;
+    }
+
+}
+
+.list a i {
+    padding-right: 10px;
+    font-size: 25px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Logo_name {
+    width: 150px;
+}

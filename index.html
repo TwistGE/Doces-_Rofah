@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="imagex/png" href="src/images/Iconsite.png">
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <title>Doces Rofah</title>
+</head>
+<header>
+    <div class="cabecalho">
+        <div class="banner">
+            <div class="div_img">
+                <img class="banner_img" src="src/images/Rofah/Banner2.png" alt="">
+            </div>
+        </div>
+
+        <div class="profile">
+            <div class="back_profile_foto">
+                <div class="profile_foto">
+                    <img src="src/images/Rofah/Foto_perfil.png" alt="">
+                </div>
+            </div>
+            <span class="profile_name">Doces Rofah</span>
+            <span class="profile_desc">Confeitaria Artesanal</span>
+        </div>
+        <div class="division"></div>
+    </div>
+</header>
+
+<body>
+    <main>
+        <div class="selection">
+
+            <ul class="list">
+                <li class="list_items">
+                    <a href="#" onclick='abrirWhats("")'>
+                        <div class="icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        CONTATO
+                    </a>
+                </li>
+                <li class="list_items">
+                    <a href="#" onclick='abrirWhats("Olá, gostaria de fazer uma encomenda!")'>
+                        <div class="icon">
+                            <i class="fa-solid fa-boxes-stacked"></i>
+                        </div>
+                        ENCOMENDAS
+                    </a>
+                </li>
+                <li class="list_items">
+                    <a href="#" onclick='abrirWhats("Olá, gostaria de saber mais informações sobre os produtos!")'>
+                        <div class="icon">
+                            <i class="fa-regular fa-circle-question"></i>
+                        </div>
+                        MAIS INFORMAÇÕES
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <img class="Logo_name" src="src/images/Cirene/escrita cici.png" alt="">
+    </footer>
+    <script src="https://kit.fontawesome.com/b2800b7110.js" crossorigin="anonymous"></script>
+
+    <script>
+        function abrirWhats(mensagem) {
+            let numero = "5519999680005";
+            let mensagemCodificada = encodeURIComponent(mensagem);
+            let url = `https://wa.me/${numero}?text=${mensagemCodificada}`;
+
+            window.open(url, "_blank");
+        }
+    </script>
+</body>
+
+</html>
